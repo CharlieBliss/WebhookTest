@@ -417,7 +417,14 @@
 	          "enabled": true,
 	          "check_tickets": true,
 	          "done_status": "10001",
-
+	          "opened": {
+	            "feature": {
+	              "enabled": true,
+	              "ticket_url": "http://features.pro.reelio.com/{{branch}}"
+	            },
+	            "tickets": true,
+	            "transition": true
+	          },
 	          "merged": {
 	            "create": true,
 	            "congrats": true,
