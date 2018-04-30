@@ -37,6 +37,7 @@ export function handle(event, context, callback) {
 		return callback(null, helper.respond('No event provided.', 400))
 	}
 
+
 	if (
 		!action &&
 		githubEvent !== 'status' &&
