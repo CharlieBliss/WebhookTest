@@ -13,8 +13,10 @@ describe('Properly handles Adding Label', () => {
 		nock.disableNetConnect()
 	})
 
+
 	it('Handles "WIP Added" event', (done) => {
 		const removeReview = nocks.labels.removeReview()
+
 
 		let payload = payloads.label.addWIP
 		Labels(payload)
