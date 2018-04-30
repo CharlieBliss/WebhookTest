@@ -11,6 +11,7 @@ export const qaToDone = {
 	"user": {
 		"displayName": "Dillon McRoberts",
 	},
+
 	"issue": {
 		"id": "27609",
 		"self": "https://reelio.atlassian.net/rest/api/2/issue/27609",
