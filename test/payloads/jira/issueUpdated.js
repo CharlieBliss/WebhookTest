@@ -12,6 +12,7 @@ export const schemaToInProgress = {
 		"active": true,
 		"timeZone": "America/New_York"
 	},
+
 	"issue": {
 		"id": "27609",
 		"self": "https://reelio.atlassian.net/rest/api/2/issue/27609",
