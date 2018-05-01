@@ -50,7 +50,7 @@ export function handle(event, context, callback) {
 		githubEvent === 'pull_request' ||
 		githubEvent === 'pull_request_review'
 	) {
-		console.log('config: ', get(config, [org, repo]))
+		console.log('config: ', get(config))
 		if (get(config, [org, repo, handler, 'require_reviews', 'enabled'])) {
 			console.log('checking reviews')
 			CheckReviews(payload, githubEvent, get(config, [org, repo, handler, 'require_reviews', 'count']))
