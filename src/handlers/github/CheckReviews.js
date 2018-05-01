@@ -58,6 +58,7 @@ function CheckReviews(payload, event, count = 2) {
 			approved = reviews
 				.map(r => r.state)
 				.filter(r => r.toLowerCase() === 'approved')
+			console.log(approved)
 			if (
 				reviews.length >= count &&
 				approved.length >= count
@@ -94,7 +95,7 @@ function CheckReviews(payload, event, count = 2) {
 
 			} else {
 				const additional = count - approved.length
-
+				console.log('payload', payload, additional)
 				request(Github.post(`${payload.pull_request.head.repo.url}/statuses/${sha}`, {
 					state: 'failure',
 					description: `This PR requires ${additional} more approved review${additional > 1 ? 's' : ''} to be merged.`,
