@@ -125,6 +125,7 @@ function handleNew(payload, config) {
  *
  */
 function handleMerge(payload, config) {
+	console.log('merge', payload, config)
 	const repo = payload.repository.html_url,
 		base = payload.pull_request.base.ref, // target of the original PR
 		user = FRONTEND_MEMBERS[payload.pull_request.user.id]
