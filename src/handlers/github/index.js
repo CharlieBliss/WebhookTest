@@ -30,7 +30,7 @@ export function handle(event, context, callback) {
 	console.log(`Github-Event: "${githubEvent}" with action: "${action}"`);
 	console.log('---------------------------------');
 	/* eslint-enable */
-
+	console.log('gittttt', fullRepo, githubEvent, action, payload)
 	firebase.log('github', fullRepo, githubEvent, action, payload)
 
 	if (!githubEvent) {
